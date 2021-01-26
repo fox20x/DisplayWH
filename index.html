@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DisplayWH</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<style>
+		body {
+			font-family: 'Roboto', sans-serif;
+		}
+		.container {
+			width: 400px;
+			margin: 10px auto;
+			padding: 10px;
+		}
+	</style>
+	<div class="container">
+		<h3>Ширина <h1 id="width"></h1> </h3><br>
+		<h3>Высота <h1 id="height"></h1> </h3><br>
+		<input type="submit" value="Показать" onclick="onSubmit()">
+	</div>
+	<script type="text/javascript">
+		function onSubmit() {
+			width.innerHTML = document.documentElement.clientWidth + "<sub>px</sub>";
+			height.innerHTML = document.documentElement.clientHeight + "<sub>px</sub>";
+		}
+	</script>
+	
+</body>
+</html>
